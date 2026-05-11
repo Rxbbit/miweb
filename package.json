@@ -1,0 +1,13 @@
+{
+  "name": "artist-dev-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Artist & Web Developer",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx -y serve .",
+    "start": "npx -y serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista & Desarrollador Web | Portfolio</title>
+    <meta name="description"
+        content="Portfolio de Artista y Desarrollador Web. Creando experiencias digitales únicas, bilingües y optimizadas para SEO.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="js-enabled">
+    <canvas id="particles-canvas"></canvas>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Artist<span class="accent">&</span>Dev</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Sobre Mí</a></li>
+                    <li><a href="#portfolio" data-i18n="nav.portfolio">Portafolio</a></li>
+                    <li><a href="#process" data-i18n="nav.process">Proceso</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="lang-btn" class="lang-btn">EN</button>
+            <div class="mobile-menu-btn" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title reveal" data-i18n="hero.title">Artista y Desarrollador</h1>
+                <p class="hero-subtitle reveal" data-i18n="hero.subtitle">Creando experiencias digitales donde el código se encuentra con el arte.</p>
+                <div class="hero-actions reveal">
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero.cta">Ver mi trabajo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal" data-i18n="about.title">Artista y Desarrollador</h2>
+                <div class="bento-grid">
+                    <div class="bento-item large reveal">
+                        <p class="bento-text" data-i18n="about.p1">Soy artista 3D de entornos y desarrollador web...</p>
+                        <p class="bento-text" data-i18n="about.p2" style="margin-top: 1rem;">Mi objetivo es transmitir algo significativo...</p>
+                        <img src="abstract_3d_element_1_1778473852854.png" alt="3D Element" class="bento-bg-asset" style="position: absolute; bottom: -50px; right: -50px; width: 300px; opacity: 0.4; filter: blur(10px);">
+                    </div>
+                    <div class="bento-item medium reveal" style="background: url('about_3d_concept_1778473877046.png') center/cover;">
+                        <div class="experience-badge" style="position: absolute; inset: 0; background: rgba(0,0,0,0.4); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span class="number" style="font-size: 4rem; font-weight: 800; color: var(--accent);">2020</span>
+                            <span class="text" data-i18n="about.freelancer" style="font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">Freelancer</span>
+                        </div>
+                    </div>
+                    <div class="bento-item wide reveal">
+                        <h3 data-i18n="techStack.title" style="margin-bottom: 2rem;">Stack Tecnológico</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">HTML5</div>
+                            <div class="tech-item">CSS3</div>
+                            <div class="tech-item">JavaScript</div>
+                            <div class="tech-item">WordPress</div>
+                            <div class="tech-item">Squarespace</div>
+                            <div class="tech-item">3D Art</div>
+                        </div>
+                    </div>
+                    <div class="bento-item small reveal" style="background: linear-gradient(135deg, var(--accent-glow), transparent);">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--accent);" data-i18n="about.global">Global</div>
+                        <p style="color: var(--text-secondary);" data-i18n="about.working">Working worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section">
+            <div class="container">
+                <h2 class="section-title reveal" data-i18n="process.title">Proceso Creativo</h2>
+                <div class="process-grid">
+                    <div class="process-step reveal">
+                        <div class="step-num">01</div>
+                        <h3 data-i18n="process.step1.t">Descubrimiento</h3>
+                        <p data-i18n="process.step1.d">Entender tu visión y objetivos.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-num">02</div>
+                        <h3 data-i18n="process.step2.t">Diseño</h3>
+                        <p data-i18n="process.step2.d">Crear una identidad visual única.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-num">03</div>
+                        <h3 data-i18n="process.step3.t">Desarrollo</h3>
+                        <p data-i18n="process.step3.d">Escribir código limpio y eficiente.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-num">04</div>
+                        <h3 data-i18n="process.step4.t">Lanzamiento</h3>
+                        <p data-i18n="process.step4.d">Optimizar y desplegar tu obra maestra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="portfolio.title">Proyectos Seleccionados</h2>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all"
+                        data-i18n="portfolio.categories.all">Todos</button>
+                    <button class="filter-btn" data-filter="business"
+                        data-i18n="portfolio.categories.business">Negocios</button>
+                    <button class="filter-btn" data-filter="hospitality"
+                        data-i18n="portfolio.categories.hospitality">Hostelería</button>
+                    <button class="filter-btn" data-filter="art" data-i18n="portfolio.categories.art">Arte</button>
+                </div>
+                <div class="project-grid" id="project-grid">
+                    <!-- Projects will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="services.title">Mi Experiencia</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.webDev.title">Desarrollo Web</h3>
+                        <p data-i18n="services.webDev.desc">Sitios web de alto rendimiento y escalables construidos con
+                            tecnologías modernas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.creativeDesign.title">Diseño Creativo</h3>
+                        <p data-i18n="services.creativeDesign.desc">Identidades visuales únicas que mezclan visión
+                            artística con UX funcional.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line x1="11" y1="8" x2="11" y2="14"></line>
+                                <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.seo.title">Estrategia SEO</h3>
+                        <p data-i18n="services.seo.desc">Optimización estratégica para asegurar que su marca llegue a la
+                            audiencia correcta globalmente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal" data-i18n="contact.title">Contacto</h2>
+                <div class="contact-card reveal">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.name">Nombre</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.email">Correo</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message" data-i18n="contact.message">Mensaje</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">
+                <span class="logo-text">Artist<span class="accent">&</span>Dev</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/bluerabbitstudio.exe/" target="_blank" class="social-link" data-i18n="footer.social">Instagram</a>
+            </div>
+            <p>&copy; 2026 <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
